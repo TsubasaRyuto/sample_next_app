@@ -13,3 +13,8 @@ services:
     volumes:
       - ../:/app
     command: 'npm run dev'
+    networks:
+      - my-network
+
+networks:
+  my-network:
